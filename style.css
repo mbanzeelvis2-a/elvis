@@ -1,0 +1,351 @@
+/* ========================= */
+/* STYLE GÉNÉRAL */
+/* ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========================= */
+/* MENU */
+/* ========================= */
+header {
+    background: #0b3d91;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* ========================= */
+/* SECTION D'ACCUEIL */
+/* ========================= */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0b3d91, #1565c0);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    background: #ffd700;
+    color: black;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* TOUTES LES SECTIONS */
+/* ========================= */
+section {
+    padding: 70px 10%;
+}
+
+section h2 {
+    text-align: center;
+    color: #0b3d91;
+    margin-bottom: 35px;
+    font-size: 36px;
+}
+
+/* ========================= */
+/* COMPÉTENCES */
+/* ========================= */
+#competences ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#competences li {
+    list-style: none;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+#competences li:hover {
+    transform: translateY(-5px);
+}
+
+/* ========================= */
+/* CARTES */
+/* ========================= */
+.carte {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-8px);
+}
+
+/* ========================= */
+/* CITATIONS */
+/* ========================= */
+blockquote {
+    background: white;
+    border-left: 6px solid #0b3d91;
+    margin: 20px 0;
+    padding: 20px;
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================= */
+/* FORMULAIRE */
+/* ========================= */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+input,
+textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+button {
+    background: #0b3d91;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+footer {
+    background: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social a:hover {
+    color: #FFD700;
+}
+
+/* ========================= */
+/* PHOTO DE PROFIL */
+/* ========================= */
+.photo-profil {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* ========================= */
+/* GALERIE */
+/* ========================= */
+.galerie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galerie img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.galerie img:hover {
+    transform: scale(1.05);
+}
+
+/* ===========================
+   BARRE DE PROGRESSION
+=========================== */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background: #FFD700;
+    z-index: 9999;
+}
+
+/* ===========================
+   BOUTON RETOUR EN HAUT
+=========================== */
+#topbtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background: #0b3d91;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#topbtn:hover {
+    background: #1565c0;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 480px) {
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
