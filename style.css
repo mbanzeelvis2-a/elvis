@@ -101,9 +101,10 @@ section {
 
 section h2 {
     text-align: center;
-    color: #0b3d91;
+    color: #03070f;
     margin-bottom: 35px;
-    font-size: 36px;
+    font-size: 50px;
+    font-family:poppins;
 }
 
 /* ========================= */
@@ -295,7 +296,7 @@ footer {
 /* ===========================
    RESPONSIVE DESIGN
 =========================== */
-@media(max-width: 768px) {
+@media(max-width: auto) {
     header {
         flex-direction: column;
         padding: 15px;
@@ -349,3 +350,60 @@ footer {
         font-size: 24px;
     }
 }
+
+/*=============== MENU MOBILE=============*/
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* TELEPHONE */
+@media (max-width: 768px)
+{
+    .menu-toggle{
+        display: block;
+        color: white;
+        margin: 10px auto;
+    }
+    nav {
+        display: block;
+        width: 100%;
+
+    }
+    nav.active {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+    nav ul li{
+        margin: 5px 0;
+    }
+}
+/*======= LOGO IMAGE ======= */
+
+
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/*============= telelogo*/
+@media (max-width:768px){
+    .logo img{
+ width: 55px;
+    height: 55px;
+}
+    }
+    

@@ -68,3 +68,10 @@ window.addEventListener("scroll", function () {
 
 topBtn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    /*============== MENU MOBILE ========*/
+    const menuToggle= document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    menuToggle.addEventListener("clic", function()){
+        mainNav.classlist.toggle("active"); 
+    }
