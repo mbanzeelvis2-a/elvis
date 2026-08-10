@@ -304,11 +304,8 @@ nav a:hover {
     color: var(--blanc);
 
     background:
-        linear-gradient(
-            135deg,
-            var(--bleu-fonce),
-            var(--bleu-clair)
-        );
+        radial-gradient(circle at top left, rgba(255,215,0,0.16), transparent 25%),
+        linear-gradient(135deg, var(--bleu-fonce), var(--bleu-clair));
 
     margin: 0;
 
@@ -321,12 +318,35 @@ nav a:hover {
     align-items: center;
 
     justify-content: center;
-
-    min-height:
-        calc(100vh - 75px);
+    min-height: calc(100vh - 75px);
+    position: relative;
+    overflow: hidden;
 
 }
 
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    animation: floatOrb 8s ease-in-out infinite;
+}
+
+.hero::before {
+    width: 240px;
+    height: 240px;
+    top: -80px;
+    right: -60px;
+}
+
+.hero::after {
+    width: 180px;
+    height: 180px;
+    bottom: -60px;
+    left: -40px;
+    animation-delay: 2s;
+}
 
 .hero.active-section {
 
@@ -336,40 +356,62 @@ nav a:hover {
 
 .hero h2 {
 
-    font-size:
-        clamp(32px, 6vw, 58px);
-
+    font-size: clamp(32px, 6vw, 58px);
     margin-bottom: 15px;
-
     line-height: 1.2;
+    letter-spacing: 0.5px;
+    animation: fadeUp 0.8s ease both;
 }
 
 
 .hero h2 span {
 
     color: var(--jaune);
+    text-shadow: 0 0 18px rgba(255,215,0,0.25);
 }
 
 
 .hero-description {
 
     font-size: 24px;
-
     font-weight: bold;
-
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    animation: fadeUp 1s ease both 0.15s;
 }
 
 
 .hero-text {
 
-    max-width: 650px;
-
+    max-width: 680px;
     font-size: 17px;
-
     margin-bottom: 30px;
-
     opacity: 0.95;
+    animation: fadeUp 1s ease both 0.3s;
+}
+
+.hero .btn {
+    animation: fadeUp 1s ease both 0.45s;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatOrb {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
 }
 
 
@@ -399,22 +441,31 @@ nav a:hover {
 
 .photo-profil {
 
-    width: 175px;
+    width: 185px;
 
-    height: 175px;
+    height: 185px;
 
     border-radius: 50%;
 
     object-fit: cover;
 
-    border:
-        5px solid var(--blanc);
+    border: 5px solid var(--blanc);
 
     margin-bottom: 25px;
 
-    box-shadow:
-        0 10px 30px
-        rgba(0, 0, 0, 0.30);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.30);
+    animation: zoomIn 0.9s ease both;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 
@@ -523,6 +574,39 @@ nav a:hover {
     color: var(--bleu);
 }
 
+.download-box {
+    margin-top: 28px;
+    padding: 20px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eef5ff, #f8fbff);
+    border: 1px solid #dce8ff;
+}
+
+.download-title {
+    font-weight: 700;
+    color: var(--bleu-fonce);
+    margin-bottom: 14px;
+}
+
+.download-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 18px;
+    border-radius: 999px;
+    background: var(--bleu);
+    color: var(--blanc);
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 8px 18px rgba(11, 61, 145, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(11, 61, 145, 0.25);
+}
+
 .apropos-gallery {
 
     display: grid;
@@ -539,13 +623,19 @@ nav a:hover {
 
     width: 100%;
 
-    height: 240px;
+    height: auto;
 
-    object-fit: cover;
+    max-height: 320px;
+
+    object-fit: contain;
 
     border-radius: 15px;
 
     box-shadow: var(--ombre);
+
+    background: #f4f6fb;
+
+    display: block;
 
 }
 
@@ -554,6 +644,14 @@ nav a:hover {
     .apropos-gallery {
 
         grid-template-columns: 1fr;
+
+        gap: 14px;
+
+    }
+
+    .apropos-gallery img {
+
+        max-height: 260px;
 
     }
 

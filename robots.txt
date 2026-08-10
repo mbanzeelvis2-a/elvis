@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mbanzeelvis2-a.github.io/elvis/sitemap.xml
