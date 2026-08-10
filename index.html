@@ -4,164 +4,726 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Elvis MBANZE | Site Officiel</title>
+
+    <meta name="description"
+        content="Site officiel de Elvis MBANZE, étudiant passionné par l'informatique, le développement web, la programmation et les technologies.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Bouton retour en haut -->
-    <button id="topbtn">↑</button>
 
-    <!-- Barre de progression -->
+    <!-- =========================
+         BARRE DE PROGRESSION
+    ========================== -->
     <div id="progress-bar"></div>
 
-    <!-- ========================= -->
-    <!-- MENU -->
-    <!-- ========================= -->
+
+    <!-- =========================
+         BOUTON RETOUR EN HAUT
+    ========================== -->
+    <button id="topbtn" aria-label="Retour en haut">↑</button>
+
+
+    <!-- =========================
+         MENU PRINCIPAL
+    ========================== -->
     <header>
-        <div class="logo"  >
-            <img src="file_00000000b7fc71fd91677f5255d1d709.png"alt="logo Elvis MBANZE">
+
+        <div class="logo">
+            <h1>Elvis MBANZE</h1>
         </div>
-        <button class="menu-toggle" id="menu-toggle" aria-label="ouvrir le menu">&#9776;</button>
-        <nav>
-        
+
+        <!-- Menu hamburger pour téléphone -->
+        <button id="menuToggle"
+                class="menu-toggle"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-controls="mainNav"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="mainNav">
+
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#reflexion">Citations</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a href="#" data-section="accueil">Accueil</a>
+                </li>
+
+                <li>
+                    <a href="#" data-section="apropos">À propos</a>
+                </li>
+
+                <li>
+                    <a href="#" data-section="competences">Compétences</a>
+                </li>
+
+                <li>
+                    <a href="#" data-section="projets">Projets</a>
+                </li>
+
+                <li>
+                    <a href="#" data-section="reflexion">Citations</a>
+                </li>
+
+                <li>
+                    <a href="#" data-section="contact">Contact</a>
+                </li>
+
             </ul>
-            </div>
+
         </nav>
-        </menu></button>
+
     </header>
 
-    <!-- ========================= -->
-    <!-- ACCUEIL -->
-    <!-- ========================= -->
-    <section id="accueil" class="hero">
-        <img src="photo.jpg" alt="Photo de Elvis MBANZE" class="photo-profil">
-        <h2>Bienvenue chez Elvis MBANZE</h2>
-        <p>Créer, apprendre et évoluer chaque jour.</p>
-        <a href="#apropos" class="btn">Découvrir mon parcours</a>
-    </section>
 
-    <!-- ========================= -->
-    <!-- A PROPOS -->
-    <!-- ========================= -->
-    <section id="apropos">
-        <h2>À propos de moi</h2>
-        <p>Je m'appelle <strong>Elvis MBANZE Mangando</strong>.</p>
-        <p>
-            Étudiant passionné par l'informatique, je poursuis chaque jour mon apprentissage afin d'améliorer mes connaissances dans les domaines du développement web, de la programmation, des bases de données et des nouvelles technologies.
-        </p>
-        <p>
-            Mon objectif est de devenir un développeur compétent, capable de créer des applications modernes, utiles et performantes.
-Malgré certaines difficultés, je n’arrête jamais d’apprendre. Chaque jour où nous avons le souffle de vie est une nouvelle occasion de progresser et de créer. </p>
+    <!-- ==================================================
+         CONTENU PRINCIPAL
+    =================================================== -->
 
-<p>Je crois profondément que la persévérance, la discipline et la curiosité ouvrent les portes des plus grandes réussites.
+    <main>
 
-Comme on le dit souvent : « Les grandes réalisations commencent toujours par la décision d’essayer. » </p>
 
-<p>’ai pris la décision de me concentrer et de travailler avec rigueur afin de rejoindre le rang des grands développeurs que nous admirons. Chaque minute consacrée à l’apprentissage, chaque effort fourni, chaque ligne de code écrite aujourd’hui construit le développeur de demain.
+        <!-- =========================
+             ACCUEIL
+        ========================== -->
+        <section id="accueil" class="page-section hero active-section">
 
-Mon professeur Jean AMBOKA nous rappelait : « Ce n’est pas la taille qui mène au sommet, mais la persévérance. Même la fourmi, par la force de ses efforts, finit par gravir la montagne. »</p>
+            <img
+                src="image/photo.jpg"
+                alt="Photo de Elvis MBANZE"
+                class="photo-profil"
+            >
 
-<P>Je tiens à exprimer ma profonde gratitude à tout le corps enseignant du <strong>COLLEGE NOTRE-DAME</strong>, pour la qualité de leur formation, ainsi qu’à l’ancien préfet Gabriel ILUKU qui nous a transmis la méthode d’étude Pomodoro.</P> <p>Je n’oublie pas non plus les enseignants du <strong> LYCEE HELENE DE CHAPPOTIN </strong>, où j’ai découvert les fondements de l’informatique. C’est grâce à Monsieur Barthélémy LUKA que ma passion pour ce domaine s’est affirmée, et à Monsieur Daniel KPAKPA que j’ai appris la rigueur et la discipline.
+            <p class="sur-titre">
+                BIENVENUE SUR MON SITE OFFICIEL
+            </p>
 
-Mes pensées vont également à Monsieur José MADOKA, que nous considérons comme le père de la comptabilité, ainsi qu’à Monsieur Israël TONGA et Monsieur Merdi MPETE, dont l’enseignement reste gravé dans ma mémoire.</p>
+            <h2>
+                Bienvenue chez <span>Elvis MBANZE</span>
+            </h2>
 
- <P>  Enfin, je remercie ma famille pour son soutien quotidien.
-À toutes celles et ceux qui visiteront ce site, je vous dis merci et que Dieu vous bénisse.
-        </p>
-        <a href="doc.pdf" class="btn" download>Télécharger ce document</a>
-    </section>
+            <p class="hero-description">
+                Créer, apprendre et évoluer chaque jour.
+            </p>
 
-    <!-- ========================= -->
-    <!-- COMPETENCES -->
-    <!-- ========================= -->
-    <section id="competences">
-        <h2>Mes compétences</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Adobe Photoshop</li>
-            <li>Bureautiques</li>
-            <li>Visual Studio</li>
-            <li>MySQL</li>
-            <li>Java</li>
-            <li>Visual Basic .NET</li>
-            <li>Conception des bases de données</li>
-            <li>Administration réseau (apprentissage)</li>
-        </ul>
-    </section>
+            <p class="hero-text">
+                Un espace consacré à mon parcours, mes apprentissages,
+                mes projets et ma passion pour l'informatique.
+            </p>
 
-    <!-- ========================= -->
-    <!-- PROJETS -->
-    <!-- ========================= -->
-    <section id="projets">
-        <h2>Mes projets</h2>
-        <div class="carte">
-            <h3>Application de Gestion</h3>
-            <p>Création d'une application de gestion moderne.</p>
-        </div>
-        <div class="carte">
-            <h3>Site Web Professionnel</h3>
-            <p>Développement d'un site web moderne en HTML, CSS et JavaScript.</p>
-        </div>
-        <div class="carte">
-            <h3>Base de données</h3>
-            <p>Conception de bases de données relationnelles avec MySQL.</p>
-        </div>
-    </section>
+            <button type="button"
+                    class="btn"
+                    data-section-button="apropos">
+                Découvrir mon parcours
+            </button>
 
-    <!-- ========================= -->
-    <!-- CITATIONS -->
-    <!-- ========================= -->
-    <section id="reflexion">
-        <h2>Conseils intellectuels pour un avenir meilleur</h2>
-        <blockquote>"Ne cesse jamais d’apprendre. La connaissance est un outil puissant pour façonner l’avenir."</blockquote>
-        <blockquote>"Prends soin de ton esprit comme tu prends soin de ton corps."</blockquote>
-        <blockquote>"Accepte l’échec comme un pas vers la réussite."</blockquote>
-        <blockquote>"Cherche à comprendre plutôt qu’à juger."</blockquote>
-    </section>
-    <!-- ========================= -->
-    <!-- CONTACT -->
-    <!-- ========================= -->
-    <section id="contact">
-        <section id="galerie">
-            <h2>Galerie</h2>
-            <div class="galerie">
-                <img src="photo1.png" alt="Image galerie 1">
-                <img src="photo3.png" alt="Image galerie 2">
-            </div>
         </section>
-        <a href="Lumière de l'Espoir.mp3" class="btn" download>Audio</a>
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Votre nom" required>
-            <input type="email" placeholder="Votre email" required>
-            <textarea placeholder="Votre message" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-                    
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
+
+
+
+        <!-- =========================
+             À PROPOS
+        ========================== -->
+        <section id="apropos" class="page-section">
+
+            <div class="section-header">
+
+                <p class="sur-titre">
+                    MON PARCOURS
+                </p>
+
+                <h2>À propos de moi</h2>
+
+            </div>
+
+
+            <div class="content-card">
+                <p>
+                    Je m'appelle
+                    <strong>Elvis MBANZE Mangando</strong>.
+                </p>
+                <p>
+                    Étudiant passionné par l'informatique, je poursuis
+                    chaque jour mon apprentissage afin d'améliorer mes
+                    connaissances dans les domaines du développement web,
+                    de la programmation, des bases de données et des
+                    nouvelles technologies.
+                </p>
+                <p>
+                    Mon objectif est de devenir un développeur compétent,
+                    capable de créer des applications modernes, utiles
+                    et performantes.
+                </p>
+                <p>
+                    Malgré certaines difficultés, je n’arrête jamais
+                    d’apprendre. Chaque jour où nous avons le souffle de
+                    vie est une nouvelle occasion de progresser et de créer.
+                </p>
+                <p>
+                    Je crois profondément que la persévérance, la discipline
+                    et la curiosité ouvrent les portes des plus grandes
+                    réussites.
+                </p>
+                <p>
+                    « Les grandes réalisations commencent toujours
+                    par la décision d’essayer. »
+                </p>
+
+                <p>
+                    J’ai pris la décision de me concentrer et de travailler
+                    avec rigueur afin de progresser dans le domaine du
+                    développement informatique.
+                    « Ce n’est pas la taille qui mène au sommet,
+                    mais la persévérance. Même la fourmi, par la force
+                    de ses efforts, finit par gravir la montagne. »
+                </p>
+                <p>
+                    Je tiens à exprimer ma profonde gratitude à tout le
+                    corps enseignant du <strong> COLLEGE NOTRE-DAME </strong>, pour la qualité
+                    de leur formation, ainsi qu’à l’ancien préfet
+                    Gabriel ILUKU qui nous a transmis la méthode d’étude
+                    Pomodoro.
+                </p>
+                <p>
+                    Je n’oublie pas non plus les enseignants du <strong>LYCEE HELENE DE CHAPPOTIN </strong>, où j’ai découvert les fondements
+                    de l’informatique.
+                </p>
+                <p>
+                    C’est grâce à Monsieur Barthélémy LUKA que ma passion
+                    pour ce domaine s’est affirmée, et à Monsieur Daniel
+                    KPAKPA que j’ai appris la rigueur et la discipline.
+                </p>
+                <p>
+                    Mes pensées vont également à Monsieur José MADOKA,
+                    Monsieur Israël TONGA et Monsieur Merdi MPETE,
+                    dont l’enseignement reste gravé dans ma mémoire.
+                </p>
+                <p>
+                    Enfin, je remercie ma famille pour son soutien quotidien.
+                </p>
+                <p>
+                    À toutes celles et ceux qui visiteront ce site,
+                    je vous dis merci et que Dieu vous bénisse.
+                </p>
+
+
+                <a href="doc.pdf/CSS3-Le-design-web-moderne.pdf"
+                   class="btn"
+                   download>
+                    Télécharger pdf informatique
+                </a>
+
+            </div>
+
+            <div class="apropos-gallery">
+                <img src="image/photo1.png"
+                     alt="Photo 1 de Elvis MBANZE">
+                <img src="image/photo3.png"
+                     alt="Photo 3 de Elvis MBANZE">
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COMPÉTENCES
+        ========================== -->
+        <section id="competences" class="page-section">
+
+            <div class="section-header">
+
+                <p class="sur-titre">
+                    CE QUE J'APPRENDS
+                </p>
+
+                <h2>Mes compétences</h2>
+
+                <p>
+                    Cliquez sur une compétence pour découvrir
+                    les informations correspondantes.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <!-- HTML -->
+                <button class="skill-card"
+                        data-detail="html">
+
+                    <span class="skill-icon">
+                        &lt;/&gt;
+                    </span>
+
+                    <h3>HTML5</h3>
+
+                    <p>
+                        Structure des pages web
+                    </p>
+
+                </button>
+
+
+                <!-- CSS -->
+                <button class="skill-card"
+                        data-detail="css">
+
+                    <span class="skill-icon">
+                        #
+                    </span>
+
+                    <h3>CSS3</h3>
+
+                    <p>
+                        Design et responsive
+                    </p>
+
+                </button>
+
+
+                <!-- JAVASCRIPT -->
+                <button class="skill-card"
+                        data-detail="javascript">
+
+                    <span class="skill-icon">
+                        JS
+                    </span>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        Interactivité web
+                    </p>
+
+                </button>
+
+
+                <!-- JAVA -->
+                <button class="skill-card"
+                        data-detail="java">
+
+                    <span class="skill-icon">
+                        J
+                    </span>
+
+                    <h3>Java</h3>
+
+                    <p>
+                        Programmation orientée objet
+                    </p>
+
+                </button>
+
+
+                <!-- MYSQL -->
+                <button class="skill-card"
+                        data-detail="mysql">
+
+                    <span class="skill-icon">
+                        DB
+                    </span>
+
+                    <h3>MySQL</h3>
+
+                    <p>
+                        Bases de données
+                    </p>
+
+                </button>
+
+
+                <!-- VISUAL BASIC -->
+                <button class="skill-card"
+                        data-detail="vb">
+
+                    <span class="skill-icon">
+                        VB
+                    </span>
+
+                    <h3>Visual Basic .NET</h3>
+
+                    <p>
+                        Applications de gestion
+                    </p>
+
+                </button>
+
+
+                <!-- RÉSEAUX -->
+                <button class="skill-card"
+                        data-detail="reseau">
+
+                    <span class="skill-icon">
+                        NET
+                    </span>
+
+                    <h3>Réseaux</h3>
+
+                    <p>
+                        Administration réseau
+                    </p>
+
+                </button>
+
+
+                <!-- PHOTOSHOP -->
+                <button class="skill-card"
+                        data-detail="photoshop">
+
+                    <span class="skill-icon">
+                        PS
+                    </span>
+
+                    <h3>Photoshop</h3>
+
+                    <p>
+                        Création graphique
+                    </p>
+
+                </button>
+
+
+            </div>
+
+
+            <!-- =========================
+                 DÉTAIL DES COMPÉTENCES
+            ========================== -->
+
+            <div id="skillDetails"
+                 class="detail-container">
+
+                <button id="closeSkill"
+                        type="button"
+                        class="close-detail">
+                    ×
+                </button>
+
+                <div id="skillDetailContent">
+                    <!-- JavaScript insère le contenu ici -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PROJETS
+        ========================== -->
+        <section id="projets" class="page-section">
+
+            <div class="section-header">
+
+                <p class="sur-titre">
+                    MES RÉALISATIONS
+                </p>
+
+                <h2>Mes projets</h2>
+
+                <p>
+                    Découvrez quelques-uns de mes travaux
+                    et domaines d'apprentissage.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <button class="project-card"
+                        data-detail="gestion">
+
+                    <h3>
+                        Application de Gestion
+                    </h3>
+
+                    <p>
+                        Une application destinée à faciliter
+                        la gestion des informations.
+                    </p>
+
+                    <span>
+                        Voir les détails →
+                    </span>
+
+                </button>
+
+
+                <button class="project-card"
+                        data-detail="siteweb">
+
+                    <h3>
+                        Site Web Professionnel
+                    </h3>
+
+                    <p>
+                        Développement d'un site web moderne
+                        avec HTML, CSS et JavaScript.
+                    </p>
+
+                    <span>
+                        Voir les détails →
+                    </span>
+
+                </button>
+
+
+                <button class="project-card"
+                        data-detail="database">
+
+                    <h3>
+                        Base de données
+                    </h3>
+
+                    <p>
+                        Conception et gestion de bases
+                        de données relationnelles avec MySQL.
+                    </p>
+
+                    <span>
+                        Voir les détails →
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+            <!-- Détails des projets -->
+
+            <div id="projectDetails"
+                 class="detail-container">
+
+                <button id="closeProject"
+                        type="button"
+                        class="close-detail">
+                    ×
+                </button>
+
+                <div id="projectDetailContent">
+                    <!-- JavaScript insère le contenu -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CITATIONS
+        ========================== -->
+        <section id="reflexion"
+                 class="page-section">
+
+            <div class="section-header">
+
+                <p class="sur-titre">
+                    RÉFLEXION
+                </p>
+
+                <h2>
+                    Conseils intellectuels pour un avenir meilleur
+                </h2>
+
+            </div>
+
+
+            <div class="quotes">
+
+                <blockquote>
+                    « Ne cesse jamais d’apprendre.
+                    La connaissance est un outil puissant
+                    pour façonner l’avenir. »
+                </blockquote>
+
+                <blockquote>
+                    « Prends soin de ton esprit comme tu prends
+                    soin de ton corps. »
+                </blockquote>
+
+                <blockquote>
+                    « Accepte l’échec comme un pas vers la réussite. »
+                </blockquote>
+
+                <blockquote>
+                    « Cherche à comprendre plutôt qu’à juger. »
+                </blockquote>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             GALERIE
+        ========================== -->
+        <section id="galerie"
+                 class="page-section">
+
+            <div class="section-header">
+
+                <p class="sur-titre">
+                    MON UNIVERS
+                </p>
+
+                <h2>Galerie</h2>
+
+            </div>
+
+
+            <div class="galerie">
+
+                <img
+                    src="image/photo1.png"
+                    alt="Galerie Elvis MBANZE"
+                >
+
+                <img
+                    src="image/photo3.png"
+                    alt="Galerie Elvis MBANZE"
+                >
+
+            </div>
+
+
+            <div class="audio-box">
+
+                <h3>
+                    Un moment audio
+                </h3>
+
+                <a href="image/Lumière de l'Espoir.mp3"
+                   class="btn"
+                   download>
+                    Télécharger l'audio
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+        <section id="contact"
+                 class="page-section">
+
+            <div class="section-header">
+
+                <p class="sur-titre">
+                    RESTONS EN CONTACT
+                </p>
+
+                <h2>Contact</h2>
+
+                <p>
+                    Vous pouvez utiliser ce formulaire
+                    pour me laisser un message.
+                </p>
+
+            </div>
+
+
+            <form id="contactForm">
+
+                <label for="nom">
+                    Nom
+                </label>
+
+                <input
+                    id="nom"
+                    type="text"
+                    placeholder="Votre nom"
+                    required
+                >
+
+
+                <label for="email">
+                    Adresse e-mail
+                </label>
+
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Votre email"
+                    required
+                >
+
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    placeholder="Votre message"
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Envoyer
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
     <footer>
-        <p>© 2026 Elvis MBANZE Mangando</p>
-        <p>Continuer à apprendre est la meilleure façon de construire son avenir.</p>
+
+        <p>
+            © 2026 Elvis MBANZE Mangando
+        </p>
+
+        <p>
+            Continuer à apprendre est la meilleure façon
+            de construire son avenir.
+        </p>
+
         <div class="social">
-            <a href="https://WWW.Facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/elvis_mbanze" target="_blank">Instagram</a>
+
+            <a href="https://www.facebook.com/ElMbnze"
+               target="_blank"
+               rel="noopener noreferrer">
+                Facebook
+            </a>
+
+            <a href="https://www.instagram.com/elvis_mbanze"
+               target="_blank"
+               rel="noopener noreferrer">
+                Instagram
+            </a>
+
         </div>
+
     </footer>
-    
-                   </li> </button>
-    <!-- Liaison avec JavaScript -->
+
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
+
 </html>
